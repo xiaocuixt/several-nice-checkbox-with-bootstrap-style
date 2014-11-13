@@ -1,0 +1,26 @@
+input[type=checkbox].checkbox {
+	position: absolute;
+	z-index:-1000; 
+	left:-1000px; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px;
+	width:1px; 
+	margin:-1px; 
+	padding:0; 
+	border:0;
+}
+.label {
+	padding-left:35px;
+	height:26px; 
+	display:inline-block;
+	line-height:26px;
+	background:url("1.png") no-repeat 0 0;
+	font-size:14px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=checkbox].checkbox:checked + label.label {
+	background-position: 0 -24px;
+}
